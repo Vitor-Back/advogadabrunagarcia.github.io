@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fundo vinho profundo */
+    --background: 345 55% 12%;
+    --foreground: 0 0% 100%;
+    --card: 345 50% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 345 50% 15%;
+    --popover-foreground: 0 0% 100%;
+    /* primary = amarelo dourado */
+    --primary: 45 95% 58%;
+    --primary-foreground: 345 55% 12%;
+    --secondary: 345 40% 20%;
+    --secondary-foreground: 45 80% 85%;
+    --muted: 345 35% 22%;
+    --muted-foreground: 345 15% 72%;
+    --accent: 345 60% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 345 35% 25%;
+    --input: 345 35% 25%;
+    --ring: 45 95% 58%;
+    --chart-1: 45 95% 58%;
+    --chart-2: 345 60% 45%;
+    --chart-3: 0 0% 100%;
+    --chart-4: 45 70% 40%;
+    --chart-5: 345 30% 55%;
+    --radius: 0.25rem;
+    --font-heading: 'Times New Roman', Times, serif;
+    --font-body: 'Times New Roman', Times, serif;
+    --font-display: 'Times New Roman', Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 345 55% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 95% 58%;
+    --sidebar-primary-foreground: 345 55% 12%;
+    --sidebar-accent: 345 40% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 345 35% 25%;
+    --sidebar-ring: 45 95% 58%;
+  }
+
+  .dark {
+    --background: 345 55% 12%;
+    --foreground: 0 0% 100%;
+    --card: 345 50% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 345 50% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 45 95% 58%;
+    --primary-foreground: 345 55% 12%;
+    --secondary: 345 40% 20%;
+    --secondary-foreground: 45 80% 85%;
+    --muted: 345 35% 22%;
+    --muted-foreground: 345 15% 72%;
+    --accent: 345 60% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 345 35% 25%;
+    --input: 345 35% 25%;
+    --ring: 45 95% 58%;
+    --chart-1: 45 95% 58%;
+    --chart-2: 345 60% 45%;
+    --chart-3: 0 0% 100%;
+    --chart-4: 45 70% 40%;
+    --chart-5: 345 30% 55%;
+    --sidebar-background: 345 55% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 95% 58%;
+    --sidebar-primary-foreground: 345 55% 12%;
+    --sidebar-accent: 345 40% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 345 35% 25%;
+    --sidebar-ring: 45 95% 58%;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
